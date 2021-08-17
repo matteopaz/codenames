@@ -52,7 +52,7 @@ const bs = document.querySelectorAll("#score > span")[0];
 const rs = document.querySelectorAll("#score > span")[1];
 const winCondition = document.querySelectorAll("#score > span")[2];
 const c = console.log.bind(console);
-var stopTiling = 0;
+var stopTiling = false;
 var colorPairArray = [];
 
 class Modal {
@@ -198,6 +198,9 @@ buttons.fill.addEventListener("click", (e) => {
   winCondition.innerText = "";
   stopTiling = 0;
   buttons.reveal.toggleAttribute("disabled", 0);
+  cells.forEach((e) => {
+    e.toggleAttribute("prevent", 0);
+  });
 }); // as
 
 const txt =
@@ -242,11 +245,11 @@ cells.forEach((e) => {
           if (nr > nb) var win = "Red Wins!";
           if (nr == nb) var win = "The game is tied!";
           winCondition.innerText = "The black tile was hit! " + win;
-          stopTiling = 1;
+          stopTiling = true;
         }
         e.target.toggleAttribute("revealed");
         clearTimeout(tmout);
-      }, 900);
+      }, 500);
       e.target.toggleAttribute("prevent");
     }
   });
