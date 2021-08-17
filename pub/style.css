@@ -142,7 +142,7 @@ body {
 *, ::after, ::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 :root {
@@ -269,6 +269,7 @@ address {
   width: max(450px, 75vw, var(--board-width));
   margin: 0 auto;
   align-items: center;
+  background-color: transparent;
 }
 
 .gradient-wrapper {
@@ -328,7 +329,7 @@ p>btn, span>btn {
   background: linear-gradient(to right bottom, red, purple);
   background: var(--lin-grad-1);
   border: 0.25rem solid #000;
-  color: white
+  color: white;
 }
 
 .btn-secondary.gradient {
@@ -394,6 +395,7 @@ p>btn, span>btn {
     }
 
 .shapes {
+  outline: none;
   overflow: hidden;
   z-index: -1;
   position: absolute;
