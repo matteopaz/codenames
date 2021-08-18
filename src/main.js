@@ -9,8 +9,8 @@ const wordBank = [
   "Green",
   "Helium",
   "Iguana",
-  "John",
-  "Kimberly",
+  "Fender",
+  "Submarine",
   "Laugh",
   "Man",
   "Netflix",
@@ -201,7 +201,7 @@ buttons.fill.addEventListener("click", (e) => {
 }); // as
 
 const txt =
-  "The game is CODENAMES. Divide into two different teams, red and blue and pick a spymaster per team. The objective of the game is to get your team to guess as many of their tiles as possible without hitting the black tile or giving points to the oter team. The spymasters will be able to use the Show All button to see which words they must attempt to get the other team to guess. The clue will be in the format of one descriptive word, along with the number of words that it describes on the board. To lock in a vote, click the desired tile. Additionally, there will be a black square that should be avoided. If a team guesses the black tile, they will end the game immediately, counting squares. By the end of the game, whoever has hit more squares wins. Do not let the rest of the players see the revealed squares.";
+  "The game is CODENAMES. Divide into two different teams, red and blue and pick a spymaster per team. The objective of the game is to get your team to guess as many of their tiles as possible without hitting the black tile or giving points to the other team. The spymasters will be able to use the Show All button to see which words they must attempt to get the other team to guess. The clue will be in the format of one descriptive word, along with the number of words that it describes on the board. To lock in a vote, click the desired tile. Additionally, there will be a black square that should be avoided. If a team guesses the black tile, they will end the game immediately, counting squares. By the end of the game, whoever has hit more squares wins. Do not let the rest of the players see the revealed squares.";
 var modal = new Modal(txt, ["modal"]);
 modal.create();
 
